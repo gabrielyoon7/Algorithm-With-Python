@@ -1,3 +1,4 @@
+#곱셈
 a=int(input())
 b=input()
 b0=int(b[0])
