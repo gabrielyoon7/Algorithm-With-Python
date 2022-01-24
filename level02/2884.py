@@ -1,3 +1,4 @@
+#	알람 시계
 hour, minute = map(int, input().split())
 time = hour*60+minute
 time -= 45

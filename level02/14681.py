@@ -1,3 +1,4 @@
+#	사분면 고르기
 x,y = map(int, input().split())
 
 if x>0:
