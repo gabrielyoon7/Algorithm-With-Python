@@ -1,24 +1,15 @@
 #단어 공부
-from numpy import character
-
-word=input().lower()
+word=input().upper()
 character=[0]*26
 for i in word:
-    character[ord(i)-97]+=1
-print(character)
+    character[ord(i)-65]+=1
+# print(character)
 max=0
-maxIndex=-1
-index=-1
-isDuplicated=False
-for i in character:
-    index+=1
-    if i == max:
-        isDuplicated=True
-    if i>max:
-        max=i
-        maxIndex=index
-        isDuplicated = False
-if isDuplicated:
-    print("?")
-else:
-    print(chr(maxIndex+65))
+answer=""
+for i in range(len(character)):
+    if character[i]>max:
+        max=character[i]
+        answer=chr(i+65)
+    elif character[i]==max:
+        answer="?"
+print(answer)
