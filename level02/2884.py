@@ -6,5 +6,5 @@ hour=time//60
 minute=time%60
 if hour<0:
     hour+=24
-print(str(hour)+" "+str(minute))
+print(hour,minute)
 
